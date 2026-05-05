@@ -1,0 +1,54 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# ReSharper
+_ReSharper*/
+*.ReSharper
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# NuGet
+packages/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Revit backup/temp files
+*.0001.rvt
+*.0002.rvt
+*.0003.rvt
+
+# Cache
+*.cache
+
+# Visual Studio Code
+.vscode/
+
+# Generated files
+*.pdb
+*.ilk
+*.obj
+*.idb
