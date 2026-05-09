@@ -216,13 +216,13 @@ Potential future development areas include:
 ---
 
 
-# Research Context
+# Professional Context
 
-This repository forms part of ongoing MSc research investigating:
+BuildSafe was developed as part of an MSc BIM consultancy and digital engineering project focused on improving design-stage safety awareness through BIM-enabled workflows and rule-based hazard analysis.
 
-> Development and Evaluation of a BIM-Based Revit Safety Plugin to Support Prevention through Design in High-Rise Construction
+The prototype explores how uncertainty-aware BIM workflows can support Prevention through Design (PtD) decision-making during early-stage project development.
 
-Research areas include:
+Key focus areas include:
 
 - BIM-enabled safety analysis
 - Prevention through Design (PtD)
@@ -230,15 +230,15 @@ Research areas include:
 - Construction safety workflows
 - Uncertainty-aware BIM analysis
 - Design-stage risk management
+- Digital engineering workflow integration
 
 ---
 
-
 # Important Disclaimer
 
-BuildSafe is a research prototype developed for academic and investigational purposes.
+BuildSafe is an early-stage prototype developed for professional evaluation, academic investigation, and BIM workflow exploration.
 
-The plugin is intended to support design-stage hazard awareness and decision-making. It does not replace professional safety review, CDM compliance processes, temporary works design, or site-specific risk assessments.
+The plugin is intended to support design-stage hazard awareness and decision-making workflows. It does not replace formal safety review procedures, CDM compliance processes, temporary works design, or project-specific risk assessments.
 
 ---
 
