@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>BuildSafe | BIM Safety Analysis Plugin</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 24px;
+    }
+
+    .hero {
+      padding: 100px 0;
+    }
+
+    h1 {
+      font-size: 72px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #cbd5e1;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #cbd5e1;
+      margin-bottom: 20px;
+      max-width: 850px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: white;
+      color: black;
+    }
+
+    .btn-secondary {
+      border: 1px solid #475569;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .section {
+      padding: 80px 0;
+      border-top: 1px solid #1e293b;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 20px;
+      padding: 24px;
+    }
+
+    .card h4 {
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: #cbd5e1;
+    }
+
+    .footer {
+      border-top: 1px solid #1e293b;
+      padding: 50px 0;
+      margin-top: 80px;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #94a3b8;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 48px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <section class="hero">
+
+      <p style="text-transform: uppercase; letter-spacing: 3px; color: #94a3b8;">
+        BIM + AI + Digital Engineering
+      </p>
+
+      <h1>BuildSafe</h1>
+
+      <h2>
+        BIM-Based Safety Analysis Plugin for Autodesk Revit
+      </h2>
+
+      <p>
+        BuildSafe is an uncertainty-aware BIM safety analysis prototype designed to support Prevention through Design (PtD) workflows through rule-based hazard identification directly within Autodesk Revit.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="btn btn-primary"
+          href="https://github.com/Trishmotas/BuildSafe"
+          target="_blank"
+        >
+          View GitHub Repository
+        </a>
+
+        <a
+          class="btn btn-secondary"
+          href="https://github.com/Trishmotas/BuildSafe/releases/tag/v1.0"
+          target="_blank"
+        >
+          Download Release v1.0
+        </a>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <h3>Key Features</h3>
+
+      <div class="grid">
+
+        <div class="card">
+          <h4>Hazard Detection</h4>
+
+          <ul>
+            <li>Rule-based hazard identification</li>
+            <li>Fall-risk detection</li>
+            <li>Long-span structural risk detection</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Risk Intelligence</h4>
+
+          <ul>
+            <li>Assumption-based risk classification</li>
+            <li>Confidence-level reporting</li>
+            <li>Uncertainty-aware BIM analysis</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>BIM Integration</h4>
+
+          <ul>
+            <li>Revit-integrated workflows</li>
+            <li>CSV hazard export</li>
+            <li>Integrated dashboard visualization</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <h3>Professional Context</h3>
+
+      <p>
+        BuildSafe was developed as part of an MSc BIM consultancy and digital engineering project focused on improving design-stage safety awareness through BIM-enabled workflows and rule-based hazard analysis.
+      </p>
+
+      <p>
+        The prototype explores how uncertainty-aware BIM workflows can support Prevention through Design (PtD) decision-making during early-stage project development.
+      </p>
+
+    </section>
+
+    <section class="section">
+
+      <h3>Technology Stack</h3>
+
+      <div class="grid">
+
+        <div class="card">
+          <h4>Core Technologies</h4>
+
+          <ul>
+            <li>Autodesk Revit API</li>
+            <li>C#</li>
+            <li>.NET</li>
+            <li>Visual Studio</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Focus Areas</h4>
+
+          <ul>
+            <li>BIM Safety Analysis</li>
+            <li>Digital Engineering</li>
+            <li>Construction Safety</li>
+            <li>PtD Workflows</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer class="footer">
+
+      <h3>Trish O. Asemota</h3>
+
+      <p>
+        MSc BIM in Design, Construction, Operations and Maintenance
+      </p>
+
+      <p class="tagline">
+        Building resilient futures through BIM, AI, sustainability & smart design.
+      </p>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
