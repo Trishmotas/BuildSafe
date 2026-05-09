@@ -29,10 +29,10 @@
     }
 
     .hero-grid {
-      max-width: 1300px;
+      max-width: 1280px;
       margin: auto;
       display: grid;
-      grid-template-columns: 1fr 1.1fr;
+      grid-template-columns: 1fr 0.95fr;
       gap: 48px;
       align-items: center;
     }
@@ -118,7 +118,9 @@
       border: 1px solid #e2e8f0;
       border-radius: 24px;
       padding: 12px;
-      box-shadow: 0 24px 70px rgba(15,23,42,0.16);
+      box-shadow: 0 24px 70px rgba(15,23,42,0.14);
+      max-width: 620px;
+      justify-self: end;
     }
 
     .hero-image-card img {
@@ -136,6 +138,11 @@
     .section {
       padding: 80px 0;
       border-top: 1px solid #e2e8f0;
+    }
+
+    .section-intro {
+      max-width: 760px;
+      margin-bottom: 20px;
     }
 
     .grid {
@@ -158,6 +165,30 @@
       font-size: 14px;
       margin-top: 18px;
       font-weight: bold;
+    }
+
+    .highlight {
+      background: #0f172a;
+      color: white;
+      border-radius: 28px;
+      padding: 48px;
+      margin-top: 24px;
+    }
+
+    .highlight h2,
+    .highlight h3,
+    .highlight h4 {
+      color: white;
+    }
+
+    .highlight p,
+    .highlight li {
+      color: #cbd5e1;
+    }
+
+    .highlight .btn-secondary {
+      color: white;
+      border-color: #d4af37;
     }
 
     ul {
@@ -186,6 +217,11 @@
         grid-template-columns: 1fr;
       }
 
+      .hero-image-card {
+        justify-self: start;
+        max-width: 100%;
+      }
+
       h1 {
         font-size: 46px;
       }
@@ -196,6 +232,10 @@
 
       .hero {
         padding: 64px 20px;
+      }
+
+      .highlight {
+        padding: 30px;
       }
     }
   </style>
@@ -238,7 +278,12 @@
   <div class="container">
 
     <section class="section">
+      <p class="eyebrow">Project Ecosystem</p>
       <h3>Featured Projects</h3>
+
+      <p class="section-intro">
+        A growing collection of BIM, AI, sustainability, digital twin, and infrastructure-focused projects developed through academic, consultancy, and self-directed digital engineering work.
+      </p>
 
       <div class="grid">
 
@@ -294,27 +339,34 @@
     </section>
 
     <section class="section">
-      <p class="eyebrow">Featured Project</p>
+      <div class="highlight">
+        <p class="eyebrow">Featured Project</p>
 
-      <h2>BuildSafe</h2>
+        <h2>BuildSafe</h2>
 
-      <p>
-        BIM-based safety analysis prototype for Autodesk Revit supporting Prevention through Design (PtD) through rule-based and uncertainty-aware hazard identification workflows.
-      </p>
+        <p>
+          BuildSafe is a BIM-based safety analysis prototype for Autodesk Revit supporting Prevention through Design (PtD) through rule-based and uncertainty-aware hazard identification workflows.
+        </p>
 
-      <div class="buttons">
-        <a class="btn btn-primary" href="https://github.com/Trishmotas/BuildSafe" target="_blank">
-          View Repository
-        </a>
+        <p>
+          The project demonstrates how BIM-enabled automation can support design-stage safety awareness, structured hazard reporting, and transparent assumption-based decision-making.
+        </p>
 
-        <a class="btn btn-secondary" href="https://github.com/Trishmotas/BuildSafe/releases/tag/v1.0" target="_blank">
-          Download Release
-        </a>
+        <div class="buttons">
+          <a class="btn btn-primary" href="https://github.com/Trishmotas/BuildSafe" target="_blank">
+            View Repository
+          </a>
+
+          <a class="btn btn-secondary" href="https://github.com/Trishmotas/BuildSafe/releases/tag/v1.0" target="_blank">
+            Download Release
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <h3>Professional Context</h3>
+      <p class="eyebrow">Professional Context</p>
+      <h3>Applied BIM, AI and Sustainability</h3>
 
       <p>
         This portfolio is developed under the Saromotas brand to showcase applied BIM, AI, sustainability, and digital engineering projects.
@@ -326,6 +378,7 @@
     </section>
 
     <section class="section">
+      <p class="eyebrow">Specialisms</p>
       <h3>Focus Areas</h3>
 
       <div class="grid">
