@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Trish O. Asemota | BIM + AI Portfolio</title>
+  <title>Saromotas | BIM + AI Digital Engineering Portfolio</title>
 
   <style>
     * {
@@ -20,41 +20,65 @@
       line-height: 1.6;
     }
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 60px 24px;
+    .hero {
+      min-height: 100vh;
+      padding: 120px 60px;
+      background-image:
+        linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.88)),
+        url("assets/saromotas-hero.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      position: relative;
     }
 
-    .hero {
-      padding: 100px 0;
+    .logo {
+      width: 95px;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+    }
+
+    .hero-content {
+      max-width: 950px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #d4af37;
+      margin-bottom: 24px;
+      font-size: 14px;
     }
 
     h1 {
-      font-size: 72px;
+      font-size: 76px;
       margin-bottom: 20px;
+      line-height: 1.05;
     }
 
     h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-      color: #cbd5e1;
+      font-size: 34px;
+      margin-bottom: 24px;
+      color: #f8fafc;
     }
 
     h3 {
-      font-size: 28px;
-      margin-bottom: 20px;
+      font-size: 32px;
+      margin-bottom: 24px;
     }
 
     h4 {
-      margin-bottom: 16px;
       font-size: 22px;
+      margin-bottom: 14px;
+      color: white;
     }
 
     p {
       color: #cbd5e1;
       margin-bottom: 20px;
-      max-width: 850px;
+      max-width: 900px;
     }
 
     .buttons {
@@ -78,12 +102,18 @@
     }
 
     .btn-secondary {
-      border: 1px solid #475569;
+      border: 1px solid #d4af37;
       color: white;
     }
 
     .btn:hover {
       transform: translateY(-2px);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 24px;
     }
 
     .section {
@@ -102,7 +132,13 @@
       background: #111827;
       border: 1px solid #1e293b;
       border-radius: 20px;
-      padding: 24px;
+      padding: 26px;
+    }
+
+    .project-tag {
+      color: #d4af37;
+      font-size: 14px;
+      margin-top: 18px;
     }
 
     ul {
@@ -126,15 +162,19 @@
       margin-top: 10px;
     }
 
-    .project-tag {
-      color: #94a3b8;
-      font-size: 14px;
-      margin-top: 20px;
-    }
-
     @media (max-width: 768px) {
+      .hero {
+        padding: 120px 24px 80px;
+      }
+
+      .logo {
+        width: 70px;
+        top: 28px;
+        left: 24px;
+      }
+
       h1 {
-        font-size: 48px;
+        font-size: 46px;
       }
 
       h2 {
@@ -146,133 +186,92 @@
 
 <body>
 
-  <div class="container">
+  <section class="hero">
+    <img src="assets/saromotas-logo.png" alt="Saromotas Logo" class="logo" />
 
-    <section class="hero">
-
-      <p style="text-transform: uppercase; letter-spacing: 3px; color: #94a3b8;">
-        BIM + AI + Digital Engineering
-      </p>
+    <div class="hero-content">
+      <p class="eyebrow">Saromotas Engineering Consulting Ltd.</p>
 
       <h1>Trish O. Asemota</h1>
 
-      <h2>
-        BIM + AI + Digital Engineering Portfolio
-      </h2>
+      <h2>BIM + AI + Digital Engineering Portfolio</h2>
 
       <p>
-        Digital engineering projects exploring BIM, AI, sustainability, automation, and resilient infrastructure workflows across the built environment.
+        Digital engineering projects exploring BIM, AI, sustainability, automation, digital twins, water systems, and resilient infrastructure workflows across the built environment.
       </p>
 
       <div class="buttons">
-
-        <a
-          class="btn btn-primary"
-          href="https://github.com/Trishmotas"
-          target="_blank"
-        >
+        <a class="btn btn-primary" href="https://github.com/Trishmotas" target="_blank">
           View GitHub Profile
         </a>
 
-        <a
-          class="btn btn-secondary"
-          href="https://www.linkedin.com/in/patricia-asemota"
-          target="_blank"
-        >
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/patricia-asemota" target="_blank">
           LinkedIn Profile
         </a>
-
       </div>
+    </div>
+  </section>
 
-    </section>
+  <div class="container">
 
     <section class="section">
-
       <h3>Featured Projects</h3>
 
       <div class="grid">
 
         <div class="card">
           <h4>BuildSafe</h4>
-
           <p>
-            BIM-based Revit safety analysis prototype supporting Prevention through Design through rule-based hazard identification workflows.
+            BIM-based Revit safety analysis prototype supporting Prevention through Design through rule-based and uncertainty-aware hazard identification workflows.
           </p>
-
-          <div class="project-tag">
-            Revit API • BIM • Safety Analysis
-          </div>
+          <div class="project-tag">Revit API • BIM • Safety Analysis</div>
         </div>
 
         <div class="card">
           <h4>Autodesk Tandem Digital Twin Project</h4>
-
           <p>
             Digital twin exploration focused on BIM operational workflows, lifecycle intelligence, and building data environments.
           </p>
-
-          <div class="project-tag">
-            Autodesk Tandem • Digital Twins • BIM
-          </div>
+          <div class="project-tag">Autodesk Tandem • Digital Twins • BIM</div>
         </div>
 
         <div class="card">
           <h4>AI + BIM Assistant</h4>
-
           <p>
             Experimental AI-assisted BIM workflows exploring automation, coordination, and digital engineering support systems.
           </p>
-
-          <div class="project-tag">
-            AI • BIM • Automation
-          </div>
+          <div class="project-tag">AI • BIM • Automation</div>
         </div>
 
         <div class="card">
           <h4>Sustainability Dashboard</h4>
-
           <p>
             Sustainability-focused analytics concepts exploring environmental visibility, reporting, and performance workflows.
           </p>
-
-          <div class="project-tag">
-            Sustainability • Dashboards • Analytics
-          </div>
+          <div class="project-tag">Sustainability • Dashboards • Analytics</div>
         </div>
 
         <div class="card">
           <h4>Water Resource Analytics</h4>
-
           <p>
             Engineering analytics exploring water systems, resilient infrastructure, and environmental planning workflows.
           </p>
-
-          <div class="project-tag">
-            Water Systems • Resilience • Infrastructure
-          </div>
+          <div class="project-tag">Water Systems • Resilience • Infrastructure</div>
         </div>
 
         <div class="card">
           <h4>Future Research Projects</h4>
-
           <p>
             Ongoing exploration into BIM, AI, sustainability, digital twins, and next-generation digital engineering systems.
           </p>
-
-          <div class="project-tag">
-            Research • Innovation • Digital Engineering
-          </div>
+          <div class="project-tag">Research • Innovation • Digital Engineering</div>
         </div>
 
       </div>
-
     </section>
 
     <section class="section">
-
-      <p style="text-transform: uppercase; letter-spacing: 3px; color: #94a3b8; margin-bottom: 20px;">
-        Featured Project
-      </p>
+      <p class="eyebrow">Featured Project</p>
 
       <h2>BuildSafe</h2>
 
@@ -281,76 +280,65 @@
       </p>
 
       <div class="buttons">
-
-        <a
-          class="btn btn-primary"
-          href="https://github.com/Trishmotas/BuildSafe"
-          target="_blank"
-        >
+        <a class="btn btn-primary" href="https://github.com/Trishmotas/BuildSafe" target="_blank">
           View Repository
         </a>
 
-        <a
-          class="btn btn-secondary"
-          href="https://github.com/Trishmotas/BuildSafe/releases/tag/v1.0"
-          target="_blank"
-        >
+        <a class="btn btn-secondary" href="https://github.com/Trishmotas/BuildSafe/releases/tag/v1.0" target="_blank">
           Download Release
         </a>
-
       </div>
-
     </section>
 
     <section class="section">
-
       <h3>Professional Context</h3>
 
       <p>
-        BuildSafe was developed as part of an MSc BIM consultancy and digital engineering project focused on improving design-stage safety awareness through BIM-enabled workflows and rule-based hazard analysis.
+        This portfolio is developed under the Saromotas brand to showcase applied BIM, AI, sustainability, and digital engineering projects.
       </p>
 
       <p>
-        The prototype explores how uncertainty-aware BIM workflows can support Prevention through Design (PtD) decision-making during early-stage project development.
+        The work reflects a growing project ecosystem focused on resilient infrastructure, smart design, digital twins, BIM-enabled automation, and practical engineering innovation.
       </p>
-
     </section>
 
     <section class="section">
-
-      <h3>Technology Stack</h3>
+      <h3>Focus Areas</h3>
 
       <div class="grid">
-
         <div class="card">
-          <h4>Core Technologies</h4>
-
+          <h4>Digital Engineering</h4>
           <ul>
-            <li>Autodesk Revit API</li>
-            <li>C#</li>
-            <li>.NET</li>
-            <li>Visual Studio</li>
+            <li>BIM workflows</li>
+            <li>Automation concepts</li>
+            <li>Digital delivery systems</li>
           </ul>
         </div>
 
         <div class="card">
-          <h4>Focus Areas</h4>
-
+          <h4>AI + BIM</h4>
           <ul>
-            <li>BIM Safety Analysis</li>
-            <li>Digital Engineering</li>
-            <li>Construction Safety</li>
-            <li>PtD Workflows</li>
+            <li>AI-assisted coordination</li>
+            <li>Smart model intelligence</li>
+            <li>Workflow support tools</li>
           </ul>
         </div>
 
+        <div class="card">
+          <h4>Sustainability + Resilience</h4>
+          <ul>
+            <li>Environmental performance</li>
+            <li>Water systems</li>
+            <li>Resilient infrastructure</li>
+          </ul>
+        </div>
       </div>
-
     </section>
 
     <footer class="footer">
+      <h3>Saromotas Engineering Consulting Ltd.</h3>
 
-      <h3>Trish O. Asemota</h3>
+      <p>Trish O. Asemota</p>
 
       <p>
         MSc BIM in Design, Construction, Operations and Maintenance
@@ -360,6 +348,11 @@
         Building resilient futures through BIM, AI, sustainability & smart design.
       </p>
 
+      <div class="buttons">
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/patricia-asemota" target="_blank">
+          Connect on LinkedIn
+        </a>
+      </div>
     </footer>
 
   </div>
