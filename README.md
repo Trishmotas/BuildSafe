@@ -6,7 +6,7 @@
 
 
 
-\### An uncertainty-aware BIM safety analysis framework supporting Prevention through Design (PtD)
+\### BuildSafe is a Revit-integrated BIM safety analysis prototype that supports Prevention through Design (PtD) through rule-based and uncertainty-aware hazard identification workflows
 
 
 
@@ -73,31 +73,16 @@ BuildSafe is intended as a decision-support system rather than a fully automated
 
 
 ```text
-
 Revit Model
-
-&#x20;   ↓
-
+    ↓
 Rule Engine
-
-&#x20;   ↓
-
+    ↓
 Hazard Classification
-
-&#x20;   ↓
-
+    ↓
 Confidence Logic
-
-&#x20;   ↓
-
+    ↓
 Reporting + Visualization
-
 ```
-
-
-
-\---
-
 
 
 \# Assumption-Based Risk Logic
